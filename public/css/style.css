@@ -1,0 +1,21 @@
+li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.img_size_cards {
+  max-height: 17em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pagination_center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 2%;
+}

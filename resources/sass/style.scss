@@ -1,0 +1,17 @@
+
+li , a{
+	list-style: none;
+	text-decoration: none;
+}
+
+.img_size_cards {
+	max-height: 17em;
+	object-fit: cover;
+}
+
+.pagination_center {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 2%;
+}
