@@ -5,7 +5,7 @@ namespace Database\Factories;
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class ShopFactory extends Factory
+class ProductFactory extends Factory
 {
 	/**
 	 * Define the model's default state.
@@ -16,7 +16,7 @@ class ShopFactory extends Factory
 	{
 		return [
 			'title' => $this->faker->name(20),
-			'image' => 'cardTov.png',
+			'image' => $this->faker->numberBetween(1, 3),
 			'content' => $this->faker->text(),
 			'price' => $this->faker->numberBetween(1, 1000),
 			'sale' => 100,

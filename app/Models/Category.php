@@ -10,6 +10,6 @@ class Category extends Model
 	use HasFactory;
 	public function posts()
 	{
-		return $this->hasMany(Shop::class, 'shop_id', 'id');
+		return $this->hasMany(product::class, 'product_id', 'id');
 	}
 }

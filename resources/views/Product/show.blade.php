@@ -8,8 +8,8 @@
 	
 
 
-<!-- 		<h1>{{ $shop->title	}}</h1>
-		<p class="card-text">{{$shop->content}}</p> -->
+<!-- 		<h1>{{ $product->title	}}</h1>
+		<p class="card-text">{{$product->content}}</p> -->
 	</div>
 </div>
 @endsection ('content')

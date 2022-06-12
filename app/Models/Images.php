@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Images extends Model
 {
     use HasFactory;
-    public function shop() {
-	return $this->belongsToMany(Shop::class, 'shop_images', 'image_id', 'shop_id');
+    public function product() {
+	return $this->belongsToMany(product::class, 'product_images', 'image_id', 'product_id');
     }
 }

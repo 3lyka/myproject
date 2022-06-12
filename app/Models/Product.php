@@ -7,13 +7,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Shop extends Model
+class Product extends Model
 {
 	use HasFactory;
 	use SoftDeletes;
 	use Filterable;
 
-	protected $table = 'shop';
+	protected $table = 'product';
 	protected $guarded = [];
 	public function category()
 	{
@@ -22,6 +22,6 @@ class Shop extends Model
 	}
 
 	public function images() {
-		return $this->belongsToMany(Images::class, 'shop_images', 'shop_id', 'image_id');
+		return $this->belongsToMany(Images::class, 'products_images', 'products_id', 'image_id');
 	}
 }
