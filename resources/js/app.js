@@ -31,6 +31,5 @@ const app = new Vue({
     el: '#app',
 });
 
-import { Autoplay, Navigation, Pagination } from "swiper";
-import Swiper from "swiper";
-Swiper.use([Autoplay, Navigation, Pagination]);
+const Swiper = require('swiper').default;
+/* import {Swiper, Navigation, Pagination} from 'swiper'; */

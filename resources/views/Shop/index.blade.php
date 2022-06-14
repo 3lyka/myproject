@@ -38,11 +38,13 @@
 			</div>
 
 		</div>
-		<div class="pagination_center">
-			{{ $product->links() }}
-		</div>
+<!-- 		<div class="pagination_center">
+			{{ $product->withQueryString()->links() }}
+		</div> -->
 	</div>
 </section>
+
+
 
 
 @endsection
