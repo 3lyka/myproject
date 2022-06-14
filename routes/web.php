@@ -26,6 +26,11 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::group(['namespace' => 'Shop'], function() {
+	Route::get('/shop', 'IndexController')->name('shop.index');
+});
+
+
 
 Route::group(['namespace' => 'Product'], function() {
 	Route::get('/shop/catalog', 'IndexController')->name('product.index');

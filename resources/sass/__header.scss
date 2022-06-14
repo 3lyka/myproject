@@ -1,0 +1,15 @@
+li,
+a {
+	list-style: none;
+	text-decoration: none;
+	color: black;
+
+	.nav-link {
+		color: black;
+	}
+
+	.nav-link:hover {
+		font-size: large;
+		font-style: bold;
+	}
+}

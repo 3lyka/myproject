@@ -43,7 +43,7 @@
 		<div class="row">
 			<ul class="col-md-3 list-group">
 				<li class="list-item">
-					<a href="{{ route ('product.index') }}" class="text-decoration-none">Первое тестовое задание</a>
+					<a href="{{ route ('shop.index') }}" class="text-decoration-none">Первое тестовое задание</a>
 
 				</li>
 				<li class="list-item">

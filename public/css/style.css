@@ -1,6 +1,17 @@
-li, a {
+li,
+a {
   list-style: none;
   text-decoration: none;
+  color: black;
+}
+li .nav-link,
+a .nav-link {
+  color: black;
+}
+li .nav-link:hover,
+a .nav-link:hover {
+  font-size: large;
+  font-style: bold;
 }
 
 .img_size_cards {
@@ -10,12 +21,8 @@ li, a {
 }
 
 .pagination_center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 0 auto;
   padding: 2%;
 }
