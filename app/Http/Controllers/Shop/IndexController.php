@@ -14,18 +14,11 @@ class IndexController extends Controller
 
 	public function __invoke(FilterRequest $request)
 	{
-
-
-
-
-
-
-
 		$data = $request->validated();
 		$filter = app()->make(ProductFilter::class, ['queryParams' => array_filter($data)]);
 		$product = Product::filter($filter)
-			->orderBy('price', 'asc')
-			->paginate(10);
+			->orderBy('price', 'asc')    //обращение к колонке Price метод вывода ASC (от меньшего значения к большему)
+			->paginate(10); //Вывод при пагинации 10 товаров, можно менять, плюс вызвать страничную пагинацию, удобно
 
 		return view('shop.index', compact('product'));
 	}

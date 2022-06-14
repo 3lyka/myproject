@@ -16,7 +16,6 @@ class CreateproductTable extends Migration
 		Schema::create('product', function (Blueprint $table) {
 			$table->id();
 			$table->string('title');
-			$table->string('image')->default(0);
 			$table->text('content');
 			$table->integer('price')->default(0);
 			$table->integer('sale')->default(0);
@@ -24,6 +23,10 @@ class CreateproductTable extends Migration
 			$table->boolean('is_published')->default(0);
 			$table->timestamps();
 			$table->softDeletes();
+
+
+			$table->unsignedBigInteger('image')->nullable;
+			$table->index('image', 'product_image_product_idx');
 
 			$table->unsignedBigInteger('category_id')->nullable;
 			$table->index('category_id', 'post_category_idx');

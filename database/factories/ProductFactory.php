@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Category;
+use App\Models\ProductImage;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ProductFactory extends Factory
@@ -22,7 +23,7 @@ class ProductFactory extends Factory
 			'sale' => 100,
 			'description' => '1',
 			'is_published' => '1',
-			'category_id' => Category::get()->random()->id
+			'category_id' => Category::get()->random()->id,
 		];
 	}
 }
