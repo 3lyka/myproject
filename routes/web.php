@@ -32,7 +32,15 @@ Route::group(['namespace' => 'Shop'], function() {
 
 
 
+
 Route::group(['namespace' => 'Product'], function() {
 	Route::get('/shop/catalog', 'IndexController')->name('product.index');
 	Route::get('/shop/catalog/product/{product}', 'ShowController')->name('product.show');
 });
+
+Route::get('/basket', 'BasketController@index')->name('basket.index');
+Route::get('/basket/checkout', 'BasketController@checkout')->name('basket.checkout');
+
+Route::post('/basket/add/{id}', 'BasketController@add')
+->where('id', '[0-9]+')
+->name('basket.add');

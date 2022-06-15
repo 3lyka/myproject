@@ -22,12 +22,11 @@ class CreateproductTable extends Migration
 			$table->integer('description')->default(0);
 			$table->boolean('is_published')->default(0);
 			$table->timestamps();
-			$table->softDeletes();
+			$table->softDeletes('deleted_at');
 
+			$table->string('image')->default(0);
 
-			$table->unsignedBigInteger('image')->nullable;
-			$table->index('image', 'product_image_product_idx');
-
+			
 			$table->unsignedBigInteger('category_id')->nullable;
 			$table->index('category_id', 'post_category_idx');
 			$table->foreign('category_id', 'post_category_fk')->on('categories')->references('id');

@@ -21,7 +21,7 @@
 
 				<div class="col">
 					<div class="card h-100">
-						<img src="images/{{ $products->image }}" class="card-img-top img_size_cards" alt="...">
+						<img src="/images/{{ $products->image }}" class="card-img-top img_size_cards" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">{{ $products->title }}</h5>
 							<p class="card-text">{{$products->content}}</p>
@@ -30,15 +30,17 @@
 									Рандомная цена (faker) {{$products->price}}
 								</button>
 							</a>
+							<button class="btn btn-info cart_button">
+								Корзина
+							</button>
 						</div>
 					</div>
 				</div>
 				@endforeach
 
 			</div>
-
 		</div>
-<!-- 		<div class="pagination_center">
+		<!-- 		<div class="pagination_center">
 			{{ $product->withQueryString()->links() }}
 		</div> -->
 	</div>

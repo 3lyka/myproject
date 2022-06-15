@@ -8,11 +8,6 @@ li .nav-link,
 a .nav-link {
   color: black;
 }
-li .nav-link:hover,
-a .nav-link:hover {
-  font-size: large;
-  font-style: bold;
-}
 
 .img_size_cards {
   max-height: 17em;
@@ -25,4 +20,27 @@ a .nav-link:hover {
   justify-content: center;
   margin: 0 auto;
   padding: 2%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

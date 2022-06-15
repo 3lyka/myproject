@@ -4,6 +4,7 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+
 require('./bootstrap');
 
 window.Vue = require('vue').default;
@@ -31,5 +32,8 @@ const app = new Vue({
     el: '#app',
 });
 
-const Swiper = require('swiper').default;
-/* import {Swiper, Navigation, Pagination} from 'swiper'; */
+
+import $ from 'jquery';
+window.$ = window.jQuery = $;
+
+import 'jquery-ui/ui/widgets/datepicker.js';
