@@ -21,12 +21,11 @@
 							</button>
 
 						</a>
-						<form action="{{ route('basket.add', ['id' => $products->id]) }}" method="post" class="form-inline">
-							@csrf
+
 							<button class="btn btn-info cart_button">
 								Корзина
 							</button>
-						</form>
+
 					</div>
 				</div>
 			</div>

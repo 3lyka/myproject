@@ -24,8 +24,4 @@ class Product extends Model
 	public function images() {
 		return $this->belongsToMany(Images::class, 'products_images', 'products_id', 'image_id');
 	}
-	public function baskets()
-	{
-		return $this->belongsToMany(Basket::class)->withPivot('quantity');
-	}
 }
