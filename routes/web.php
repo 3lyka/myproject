@@ -18,13 +18,13 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
 
 Route::group(['namespace' => 'Shop'], function() {
 	Route::get('/shop', 'IndexController')->name('shop.index');
@@ -33,8 +33,18 @@ Route::group(['namespace' => 'Shop'], function() {
 
 
 
+
+
 Route::group(['namespace' => 'Product'], function() {
 	Route::get('/shop/catalog', 'IndexController')->name('product.index');
 	Route::get('/shop/catalog/product/{product}', 'ShowController')->name('product.show');
 	
+});
+
+
+
+/* Admin Route */
+
+Route::group(['namespace' => 'Admin', 'middleware' => 'admin'], function () {
+	Route::get('/admin', 'IndexController')->name('admin.index');
 });

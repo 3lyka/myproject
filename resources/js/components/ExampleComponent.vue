@@ -1,34 +1,23 @@
 <template>
-	<swiper :slides-per-view="3" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange">
-		<swiper-slide>Slide 1</swiper-slide>
-		<swiper-slide>Slide 2</swiper-slide>
-		<swiper-slide>Slide 3</swiper-slide>
-		...
-	</swiper>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Example Component</div>
+
+                    <div class="card-body">
+                        I'm an example component.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
+
 <script>
-// Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from 'swiper/vue';
-
-// Import Swiper styles
-import 'swiper/css';
-
-export default {
-	components: {
-		Swiper,
-		SwiperSlide,
-	},
-	setup() {
-		const onSwiper = (swiper) => {
-			console.log(swiper);
-		};
-		const onSlideChange = () => {
-			console.log('slide change');
-		};
-		return {
-			onSwiper,
-			onSlideChange,
-		};
-	},
-};
+    export default {
+        mounted() {
+            console.log('Component mounted.')
+        }
+    }
 </script>

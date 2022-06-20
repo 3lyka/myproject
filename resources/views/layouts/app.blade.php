@@ -72,6 +72,9 @@
 							</div>
 						</li>
 						@endguest
+						<li class="nav-item">
+							<a class="nav-link" href="{{ route('admin.index') }}">Admin panel</a>
+						</li>
 					</ul>
 				</div>
 			</div>

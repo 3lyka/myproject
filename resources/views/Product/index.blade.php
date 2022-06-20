@@ -1,6 +1,7 @@
 @extends('layouts.pattern')
 
 @section('content')
+
 <div class="container mb-5 mt-5">
 	<div class="row">
 		<h1 class="h1_text_cards fw-bold">Карточки товара</h1>
@@ -22,9 +23,9 @@
 
 						</a>
 
-							<button class="btn btn-info cart_button">
-								Корзина
-							</button>
+						<button class="btn btn-info cart_button">
+							Корзина
+						</button>
 
 					</div>
 				</div>
@@ -36,5 +37,7 @@
 	<div class="pagination_center">
 		{{ $product->links() }}
 	</div>
+
+
 </div>
 @endsection ('content')
