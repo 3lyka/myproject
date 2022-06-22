@@ -16,7 +16,7 @@
 	<div class="container mb-5 mt-1">
 		<div class="row">
 			<div class="swiper mySwiper">
-				<div class="swiper-wrapper">
+				<div class="swiper-wrapper mb-5">
 					@foreach ($product as $products)
 					<div class="swiper-slide">
 

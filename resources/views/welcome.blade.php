@@ -28,7 +28,7 @@
 					Vue.js (Буду изучать максимально, там SPA можно делать)
 				</li>
 				<li>
-					Laravel
+					Laravel 8 (лушчий php framework)
 				</li>
 				<li>
 					SaSS (потому что нравится)
